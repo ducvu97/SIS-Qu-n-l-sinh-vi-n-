@@ -1,4 +1,4 @@
-CRATE TABLE sis.subject(
+CREATE TABLE sis.subject(
 idSubject VARCHAR(255) NOT NULL,
 nameSuject VARCHAR(45) NOT NULL,
 nameOfCredit int,
@@ -9,13 +9,13 @@ user VARCHAR(255) NOT NULL,
 password VARCHAR(25) NOT NULL,
 PRIMARY KEY(user)
 );
-CRATE TABLE sis.user(
+CREATE TABLE sis.user(
 id VARCHAR(355) NOT NULL,
 password VARCHAR(45) NOT NULL,
 name VARCHAR(45),
 PRIMARY KEY(idSubject)
 );
-CRATE TABLE sis.subjectregister(
+CREATE TABLE sis.subjectregister(
 iduser VARCHAR(255) NOT NULL,
 numberOfCredit int NOT NULL,
 idSubject VARCHAR(255) NOT NULL,
